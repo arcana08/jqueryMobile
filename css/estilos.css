@@ -26,3 +26,16 @@ body {
     background-color: #0056b3;
     border-color: #0056b3;
 }
+h1 {
+    word-wrap: break-word; /* Permite que las palabras largas se dividan */
+    text-align: center; /* Centra el texto */
+    font-size: 3vw; /* Ajusta el tamaño del texto según el ancho de la pantalla */
+    margin: 0 auto; /* Asegura que el contenedor esté centrado */
+    max-width: 100%; /* Evita que el texto se desborde fuera del contenedor */
+}
+h3 {
+    font-size: 2vw; /* Ajusta el tamaño del texto según el ancho de la pantalla */
+}
+div[data-role="header"] {
+    width: 100%; /* Asegura que el contenedor del título ocupe todo el ancho disponible */
+}
