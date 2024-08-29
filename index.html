@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Mueve Muebleria</title>
-    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="https://demos.jquerymobile.com/1.4.5/css/themes/default/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="https://demos.jquerymobile.com/1.4.5/_assets/css/jqm-demos.css">
+    <!-- <link rel="stylesheet" href="css/estilos.css"> -->
+
 </head>
+
 <body>
     <!-- pagina de login -->
     <div data-role="page" id="page1">
@@ -13,12 +18,22 @@
             <h1>BIENBENIDOS A LA MUEVE MUEBLERIA</h1>
         </div>
         <div data-role="content">
-
+            <label for="">USUARIO</label>
+            <input type="text" id="txt_usuario">
+            <label for="">CONTRASEÑA</label>
+            <input type="text" id="txt_clave">
         </div>
-        <div data-role="footer">
-            
-        </div>
+            <div data-role="footer">
+                    <div data-role="navbar">
+                            <ul>
+                                    <li><a href="#" data-icon="grid">Summary</a></li>
+                                    <li><a href="#" data-icon="star" class="ui-btn-active">Favs</a></li>
+                                    <li><a href="#" data-icon="gear">Setup</a></li>
+                                </ul>
+                        </div><!-- /navbar -->
+        </div><!-- /footer -->
     </div>
+
     <!-- pagina de registro -->
     <div data-role="page" id="page2">
         <div data-role="header">
@@ -27,8 +42,30 @@
         <div data-role="content">
 
         </div>
+        <div data-role="footer">
+            <div class="nav-buttons">
+                <a href="#page1" class="ui-btn ui-btn-inline">VOLVER</a>
+                <a href="#page1" class="ui-btn ui-btn-inline">REGISTRARSE</a>
+            </div>
+        </div>
+    </div>
+    <!-- pagina de inicio -->
+    <div data-role="page" id="page3">
+        <div data-role="header">
+            <h1>LA MUEVE MUEBLERIA</h1>
+        </div>
+        <div data-role="content">
+
+        </div>
+        <div data-role="footer">
+            <div class="nav-buttons">
+                <a href="#page1" class="ui-btn ui-btn-inline">VOLVER</a>
+                <a href="#page1" class="ui-btn ui-btn-inline">SIGUIENTE</a>
+            </div>
+        </div>
     </div>
     <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 </body>
+
 </html>
